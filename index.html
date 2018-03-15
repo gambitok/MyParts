@@ -8,12 +8,25 @@
 	<link rel="stylesheet" href="css/style.css">
   	<script language="JavaScript" src="js/jquery-3.3.1.min.js"></script>
 	<script language="JavaScript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bigSlide.js"></script>
 	<script language="JavaScript" src="js/script.js"></script>
 
 </head>
 <body>
-
 	
+	<nav id="menu" class="panel" role="navigation">
+		<ul>
+			<li>МЕНЮ</li>
+			<li><a href="">Головна</a></li>
+			<li><a href="">Продукція</a></li>
+			<li><a href="">Каталоги</a></li>
+			<li><a href="">Акції та новини</a></li>
+			<li><a href="">Контакти</a></li>
+			<li><a href="">Корзина<span>(00.00 UAH)</span></a></li>
+		</ul>
+	</nav>
+
+
 <div class="wrapper container-fluid">
 
 	<div class="header">
@@ -21,17 +34,20 @@
 			<div class="container">
 			<div class="row align-items-center">
 				<div class="col-6 contacts">
+
+					
+					
 					<ul class="list-inline-lang" >
 						<a href=""><li><img src="img/flags/ua.png" alt=""><span> Укр</span></li></a>
 						<a href=""><li><img src="img/flags/ru.png" alt=""><span> Рус</span></li></a>
 					<ul>
+						
+
 <!--					<img src="img/icons/call.png" alt="">  <span>тел. +380 (67) 080 30 60, +380 (50) 080 30 60, +380 (93) 080 30 60</span>-->
 				</div>
 				<div class="col-6 authorization">
 					<ul class="list-inline-right">
 						<a href="" data-toggle="modal" data-target="#myModal"><li><i class="fas fa-sign-in-alt"></i>  Увійти</li></a>
-
-						
 						<a href=""><li><i class="fas fa-user-plus"></i>  Реєстрація</li></a>
 					</ul>
 				</div>	
@@ -54,7 +70,8 @@
 				</div>
 
 				<div class="col-2 bar">
-					<button class="btn btn-outline-secondary btn-primary" type="button"><i class="fas fa-bars"></i></button>
+					<div class="nav-block"><a href="#menu" class="btn btn-outline-secondary btn-primary menu-link"><i class="fas fa-bars"></i></a></div>
+
 				</div>
 				<div class="col-2 basket">
 					<div class="row align-items-center">
@@ -74,8 +91,8 @@
 			<div class="container">
 			<div class="row align-items-center">
 					<ul class="list-inline-left">
-						<a href="/"><li>Главная</li></a>
-						<li class="active_block">Продукция 
+						<a href="/"><li>Головна</li></a>
+						<li class="active_block">Продукція 
 							<div class="in_block">
 							<ul class="menu_item">
 								<a href=""><li>TOKO</li></a>
@@ -95,9 +112,9 @@
 							</div>
 						</li>
 						<a href=""><li>Каталоги</li></a>
-						<a href=""><li>Акции и новости</li></a>
-						<a href=""><li>Контакты</li></a>
-						<a href=""><li class="basket_li"><img class="basket-img" src="img/basket.png" alt=""> <span>00.00$</span></li></a>
+						<a href=""><li>Акції и новини</li></a>
+						<a href=""><li>Контакти</li></a>
+						<a href=""><li class="basket_li"><img class="basket-img" src="img/basket.png" alt=""> <span>00.00 UAH</span></li></a>
 					</ul>
 			</div>
 			</div>
