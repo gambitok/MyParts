@@ -6,7 +6,7 @@
 	<title>MyParts.Pro</title>
 	<link rel="stylesheet" href="fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
   	<script language="JavaScript" src="js/jquery-3.3.1.min.js"></script>
 	<script language="JavaScript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/bigSlide.js"></script>
@@ -15,6 +15,15 @@
 	
 <body>
 <div class="wrapper container-fluid">
+	
+	<div class="fixed hidden"> 
+	  	<div class="input-group">
+			<input type="text" class="form-control" placeholder="Пошук по артиклу" aria-label="Пошук по артиклу" aria-describedby="basic-addon2">
+			<div class="input-group-append">
+				<button class="btn btn-outline-secondary btn-primary" type="button"><i class="fas fa-search"></i></button>
+			</div>
+		</div>
+	</div>
 
 	<div class="header">
 		<div class="header_top row">
@@ -22,14 +31,14 @@
 			<div class="row align-items-center">
 				<div class="col-6 contacts">
 					<ul class="list-inline-lang">
-						<a href=""><li><img src="img/flags/ua.png" alt=""><span> Укр</span></li></a>
-						<a href=""><li><img src="img/flags/ru.png" alt=""><span> Рус</span></li></a>
+						<a href=""><li><img src="images/flags/ua.png" alt=""><span> Укр</span></li></a>
+						<a href=""><li><img src="images/flags/ru.png" alt=""><span> Рус</span></li></a>
 					</ul>				
 				</div>
 				<div class="col-6 authorization">
 					<ul class="list-inline-right">
-						<a href="" data-toggle="modal" data-target="#myModal"><li><i class="fas fa-sign-in-alt"></i><span> Увійти</span></li></a>
-						<a href=""><li><i class="fas fa-user-plus"></i><span> Реєстрація</span></li></a>
+						<a href="#" data-toggle="modal" data-target="#myModal"><li><i class="fas fa-sign-in-alt"></i><span> Увійти</span></li></a>
+						<a href="#"><li><i class="fas fa-user-plus"></i><span> Реєстрація</span></li></a>
 					</ul>
 				</div>	
 			</div>
@@ -40,7 +49,8 @@
 			<div class="container">
 			<div class="row align-items-center">
 				
-				<div class="col-2 logotype"><a href=""><img class="logo_img" src="img/logo.png" alt=""></a></div>
+				<div class="col-2 logotype"><a href=""><img class="logo_img" src="images/logo.png" alt="MyParts"></a></div>
+				<div class="col-2 logotype_min"><a href=""><img class="logo_img" src="images/logo_min.png" alt="MyParts"></a></div>
 				
 				<div class="col-8 search">
 					<div class="input-group">
@@ -59,9 +69,9 @@
 					<div class="row align-items-center">
 						<ul class="list-inline">
 							<li>Контакти:</li>
-							<li><img class="fav-img"  src="img/icons/call.png" alt=""> (067) <span>080 30 60</span></li>
-							<li><img  class="fav-img" src="img/icons/call.png" alt=""> (050) <span>080 30 60</span></li>
-							<li><img  class="fav-img" src="img/icons/call.png" alt=""> (093) <span>080 30 60</span></li>
+							<li><i class="fas fa-phone"></i> (067) <span>080 30 60</span></li>
+							<li><i class="fas fa-phone"></i> (050) <span>080 30 60</span></li>
+							<li><i class="fas fa-phone"></i> (093) <span>080 30 60</span></li>
 						</ul>
 					</div>
 				</div>
@@ -96,7 +106,7 @@
 						<a href=""><li>Каталоги</li></a>
 						<a href=""><li>Акції и новини</li></a>
 						<a href=""><li>Контакти</li></a>
-						<a href=""><li class="basket_li"><img class="basket-img" src="img/basket.png" alt=""> <span>00.00 UAH</span></li></a>
+						<a href=""><li class="basket_li"><img class="basket-img" src="images/basket.png" alt=""> <span>00.00 UAH</span></li></a>
 					</ul>
 				</div>
 			</div>
@@ -108,55 +118,203 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 main_menu">
-					<ul class="nav nav-tabs" id="myTab" role="tablist">
-					  <li class="nav-item">
-						<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Оригинальные каталоги</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Общие каталоги</a>
-					  </li>
-					</ul>
+					
+					<div class="tabs">
+					  <input class="input" name="tabs" type="radio" id="tab-1" checked="checked"/>
+					  <label class="label" for="tab-1">Оригінал</label>
+					  <div class="panel__item">
+						<h5>Оригінальні каталоги запчастин</h5>
+						<p></p>
+						<div class="container">  
+						<div class="gallery row">
+							<div class="gallery__item col-lg-3 col-md-6 col-xs-12">
+								<a href="">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-6"><img src="images/brands/bmw.png" alt=""></div>
+										<div class="col-6"><span>BMW</span></div>
+									</div>
+								</div>	
+								</a>
+							</div>
+							<div class="gallery__item col-lg-3 col-md-6 col-xs-12">
+								<a href="">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-6"><img src="images/brands/audi.png" alt=""></div>
+										<div class="col-6"><span>Audi</span></div>
+									</div>
+								</div>
+								</a>
+							</div>
+							<div class="gallery__item col-lg-3 col-md-6 col-xs-12">
+								<a href="">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-6"><img src="images/brands/ferrari.png" alt=""></div>
+										<div class="col-6"><span>Ferrari</span></div>
+									</div>
+								</div>
+								</a>
+							</div>
+							<div class="gallery__item col-lg-3 col-md-6 col-xs-12">
+								<a href="">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-6"><img src="images/brands/toyota.png" alt=""></div>
+										<div class="col-6"><span>Toyota</span></div>
+									</div>
+								</div>	
+								</a>
+							</div>
+							<div class="gallery__item col-lg-3 col-md-6 col-xs-12">
+								<a href="">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-6"><img src="images/brands/alfa-romeo.png" alt=""></div>
+										<div class="col-6"><span>Alfa-Romeo</span></div>
+									</div>
+								</div>	
+								</a>
+							</div>
+							<div class="gallery__item col-lg-3 col-md-6 col-xs-12">
+								<a href="">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-6"><img src="images/brands/chevrolet.png" alt=""></div>
+										<div class="col-6"><span>Chevrolet</span></div>
+									</div>
+								</div>
+								</a>
+							</div>
+							<div class="gallery__item col-lg-3 col-md-6 col-xs-12">
+								<a href="">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-6"><img src="images/brands/fiat.png" alt=""></div>
+										<div class="col-6"><span>Fiat</span></div>
+									</div>
+								</div>
+								</a>
+							</div>
+							<div class="gallery__item col-lg-3 col-md-6 col-xs-12">
+								<a href="">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-6"><img src="images/brands/ford.png" alt=""></div>
+										<div class="col-6"><span>Ford</span></div>
+									</div>
+								</div>	
+								</a>
+							</div>
+							<div class="gallery__item col-lg-3 col-md-6 col-xs-12">
+								<a href="">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-6"><img src="images/brands/volvo.png" alt=""></div>
+										<div class="col-6"><span>Volvo</span></div>
+									</div>
+								</div>	
+								</a>
+							</div>
+							<div class="gallery__item col-lg-3 col-md-6 col-xs-12">
+								<a href="">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-6"><img src="images/brands/volkswagen.png" alt=""></div>
+										<div class="col-6"><span>VW</span></div>
+									</div>
+								</div>
+								</a>
+							</div>
+							<div class="gallery__item col-lg-3 col-md-6 col-xs-12">
+								<a href="">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-6"><img src="images/brands/skoda.png" alt=""></div>
+										<div class="col-6"><span>Skoda</span></div>
+									</div>
+								</div>
+								</a>
+							</div>
+							<div class="gallery__item col-lg-3 col-md-6 col-xs-12">
+								<a href="">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-6"><img src="images/brands/renault.png" alt=""></div>
+										<div class="col-6"><span>Renault</span></div>
+									</div>
+								</div>	
+								</a>
+							</div>
+							<div class="gallery__item col-lg-3 col-md-6 col-xs-12">
+								<a href="">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-6"><img src="images/brands/mitsubishi.png" alt=""></div>
+										<div class="col-6"><span>Mitsubishi</span></div>
+									</div>
+								</div>	
+								</a>
+							</div>
+							<div class="gallery__item col-lg-3 col-md-6 col-xs-12">
+								<a href="">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-6"><img src="images/brands/kia.png" alt=""></div>
+										<div class="col-6"><span>KIA</span></div>
+									</div>
+								</div>
+								</a>
+							</div>
+							<div class="gallery__item col-lg-3 col-md-6 col-xs-12">
+								<a href="">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-6"><img src="images/brands/hyundai.png" alt=""></div>
+										<div class="col-6"><span>Hyundai</span></div>
+									</div>
+								</div>
+								</a>
+							</div>
+							<div class="gallery__item col-lg-3 col-md-6 col-xs-12">
+								<a href="">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-6"><img src="images/brands/citroen.png" alt=""></div>
+										<div class="col-6"><span>Citroen</span></div>
+									</div>
+								</div>	
+								</a>
+							</div>
+						</div>
+						</div>
 
-					<div class="tab-content">
-					  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-						  <div class="container">
-						  	<div class="main_tab">
-								<h5>Каталоги 1</h5>	
-								<ul>
-								<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, eum corporis illum. Accusamus porro asperiores earum quidem est? Voluptate architecto accusantium placeat cum repellat repudiandae non et officiis consequatur nulla.</li>
-								<li>Deserunt perspiciatis alias eius provident nemo molestiae a voluptate corporis, officia hic vel dicta ab soluta odit, quaerat cum inventore totam, minus accusamus, modi eos aliquid possimus mollitia. Cum, voluptates!</li>
-								<li>Voluptates aperiam possimus consequuntur minus, quibusdam nostrum asperiores, alias optio, veritatis ipsam quis minima. Omnis praesentium officia, numquam nostrum. Suscipit nisi dolorum impedit ullam doloremque tempore eum quo numquam esse!</li>
-								<li>Aut nostrum dignissimos neque! Alias voluptas repudiandae, minus deleniti enim saepe repellat earum pariatur non ad praesentium autem commodi neque accusamus expedita dolor iusto cum. Deserunt libero, corporis itaque velit.</li>
-								<li>Alias facere quibusdam unde excepturi aperiam delectus, officiis qui minima ratione, temporibus dolorem quasi earum rem optio explicabo iusto libero corporis mollitia porro repellendus vel voluptas nesciunt quos. Veritatis, quis?</li>
-								<li>Explicabo accusantium quae quis vitae facilis laudantium earum, vero repellat alias, consequuntur, eius rem soluta omnis temporibus! Consequuntur quaerat, nulla! Cumque maiores, odit. Deserunt sint atque molestias doloremque minus obcaecati.</li>
-								</ul>
-						    </div>
-						  </div>
 					  </div>
-					  <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">						  
-						  <div class="container">
-						  	<div class="main_tab">
-								<h5>Каталоги 2</h5>	
-								<ul>
-								<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, eum corporis illum. Accusamus porro asperiores earum quidem est? Voluptate architecto accusantium placeat cum repellat repudiandae non et officiis consequatur nulla.</li>
-								<li>Deserunt perspiciatis alias eius provident nemo molestiae a voluptate corporis, officia hic vel dicta ab soluta odit, quaerat cum inventore totam, minus accusamus, modi eos aliquid possimus mollitia. Cum, voluptates!</li>
-								<li>Voluptates aperiam possimus consequuntur minus, quibusdam nostrum asperiores, alias optio, veritatis ipsam quis minima. Omnis praesentium officia, numquam nostrum. Suscipit nisi dolorum impedit ullam doloremque tempore eum quo numquam esse!</li>
-								<li>Aut nostrum dignissimos neque! Alias voluptas repudiandae, minus deleniti enim saepe repellat earum pariatur non ad praesentium autem commodi neque accusamus expedita dolor iusto cum. Deserunt libero, corporis itaque velit.</li>
-								<li>Alias facere quibusdam unde excepturi aperiam delectus, officiis qui minima ratione, temporibus dolorem quasi earum rem optio explicabo iusto libero corporis mollitia porro repellendus vel voluptas nesciunt quos. Veritatis, quis?</li>
-								</ul>	
-						    </div>
-						  </div></div>
+					  <input class="input" name="tabs" type="radio" id="tab-2"/>
+					  <label class="label" for="tab-2">Каталоги 2</label>
+					  <div class="panel__item">
+						<h2>Каталоги 2</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ipsa odio nihil eaque voluptates animi nisi natus numquam esse autem neque est minus laboriosam impedit, aperiam, officia distinctio aliquid quae.</p>
+					  </div>
+					  <input class="input" name="tabs" type="radio" id="tab-3"/>
+					  <label class="label" for="tab-3">Каталоги 3</label>
+					  <div class="panel__item">
+						<h2>Каталоги 3</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore odit quasi unde aliquam possimus placeat quisquam nulla. Ex dolores nulla, magnam hic, et tempora fugit perspiciatis dolorem voluptas optio. Molestias.</p>
+					  </div>
 					</div>
+					 
 				</div>
 				<div class="col-lg-4 sidebar">
 					<ul class="list-block">
 						<li>
 							<div class="details">
 								<div class="container img_cont">
-									<div class="img_det"><img src="img/ex.jpg"></div>
-									<div class="img_det"><img src="img/ex.jpg"></div>
-									<div class="img_det"><img src="img/ex.jpg"></div>
-									<div class="img_det"><img src="img/ex.jpg"></div>
+									<div class="img_det"><img src="images/ex.jpg"></div>
+									<div class="img_det"><img src="images/ex.jpg"></div>
+									<div class="img_det"><img src="images/ex.jpg"></div>
+									<div class="img_det"><img src="images/ex.jpg"></div>
 
 							</div></div>
 						</li>
@@ -184,14 +342,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="push"></div>	
-</div>
+<!--	<div class="push"></div>	-->
+
 	
-<footer class="container-fluid">
 	<div class="footer row">
 		<div class="container">
 		<div class="row">
-			<div class="col-4">
+			<div class="col-lg-4 col-md-12">
 				<h5>Контакти</h5>
 				<ul class="list-ul">
 					<li><i class="fas fa-phone-square"></i> +380 (67) 080 30 60, +380 (50) 080 30 60,<br> +380 (93) 080 30 60</li>
@@ -216,7 +373,9 @@
 		</div>
 		</div>
 	</div>
-</footer>
+
+	
+</div>
 	
 							
 <!-- Modal -->
@@ -230,20 +389,22 @@
 			<div class="modal-body">
 				<div class="container">
 					<div class="row align-items-center">
+						<div class="offset-3 col-6">
 						<form id="login" name="login" action="/" method="POST" onsubmit="">
 							<input class="clearAll TextBox" id="loginform" type="hidden" name="loginform" value="1">										
 							<input class="clearAll TextBox" id="remember" type="hidden" name="remember" value="1">							
 							<div class="auth-input ">
 								<label class="auth-label">Логін</label><br>
-								<input class="form-control" id="userlogin" type="text" name="userlogin" value="" placeholder="логин">		
+								<input class="form-control" id="userlogin" type="text" name="userlogin" value="" placeholder="Введіть логін">		
 							</div>
 							<div class="auth-input ">
 								<label class="auth-label">Пароль</label><br>
-								<input class="form-control" id="userpassword" type="password" name="userpassword" value="" placeholder="пароль">
+								<input class="form-control" id="userpassword" type="password" name="userpassword" value="" placeholder="Введіть пароль">
 							</div><br>
 							<input class="btn btn-primary" type="submit" value="Войти"><br>
 							<a class="auth-link" href="/recover_password.html">Забули пароль?</a>
 						</form>
+						</div>
 					</div>
 				</div>
 			</div>
